@@ -34,25 +34,11 @@
     <div class="body flex-container">
       <div class="card">
         <h2>Android</h2>
-        <ul>
-          <li>
-            https://www.udacity.com/course/android-basics-user-interface--ud834
-          </li>
-          <li>
-            https://www.udacity.com/course/android-basics-user-input--ud836
-          </li>
-          <li>
-            https://www.udacity.com/course/android-basics-multiscreen-apps--ud839
-          </li>
-          <li>
-            https://www.udacity.com/course/android-basics-networking--ud843
-          </li>
-          <li>
-            https://www.udacity.com/course/android-basics-data-storage--ud845
-          </li>
-          <li>https://www.udacity.com/course/android-performance--ud825</li>
-          <li>https://classroom.udacity.com/courses/ud825</li>
-        </ul>
+        <ul id="android"></ul>
+      </div>
+      <div class="card">
+        <h2>Web</h2>
+        <ul id="web"></ul>
       </div>
     </div>
     <div id="up-arrow">
@@ -61,5 +47,9 @@
       </a>
     </div>
     <script src="../script.js"></script>
+    <script>
+      window.onload = loadHTMLContent("android", "../resources/useful/android");
+      window.onload = loadHTMLContent("web", "../resources/useful/web");
+    </script>
   </body>
 </html>
