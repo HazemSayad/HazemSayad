@@ -1,18 +1,5 @@
-/* 
-level 0: #efefef - top layer
-level 1: #cfcfcf
-level 2: #afafaf
-level 3: #8f8f8f
-level 4: #707070
-level 5: #505050
-level 6: #303030 - bottom layer
-level 7: #101010 - shadows
-
-deep orange: #FF5722
-*/
-
 body {
-  background-color: #ffc100;
+  background-color: #ffaa00;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -31,20 +18,15 @@ a:hover {
   font-style: italic;
 }
 
-.front {
-  font-size: x-large;
-  padding: 0.5em 1.3em;
-}
-
 h1,
 h2 {
   color: white;
 }
 
 legend {
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-left: 0.5em;
   margin-top: -0.5em;
   font-weight: bolder;
   background-color: #e45e04;
@@ -53,15 +35,7 @@ legend {
 }
 
 fieldset {
-  border: #e45e04 solid 0.35em;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.middle {
-  width: 200%;
+  border: #e66000 solid 0.35em;
 }
 
 nav a:link {
@@ -73,27 +47,23 @@ nav a:hover {
   font-style: normal;
 }
 
+.front {
+  font-size: x-large;
+  padding: 0.5em 1.3em;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.middle {
+  width: 200%;
+}
+
 .nav-bar {
   background-color: white;
   border-radius: 0.5em;
   padding: 0 1.25em;
-}
-
-#navbarlist {
-  padding-left: 0;
-}
-
-#navbarlist > li:hover {
-  background-color: rgb(233, 233, 233);
-}
-#navbarlist li a {
-  padding: 1em 0.5em;
-  flex-grow: 1;
-  font-size: 1.1em;
-}
-#navbarlist li {
-  flex-grow: 1;
-  padding-bottom: 0;
 }
 
 .nav-bar .flex-container {
@@ -106,26 +76,26 @@ nav a:hover {
 }
 
 .card {
-  background-color: #ff9501;
+  background-color: #ffc34d;
   padding: 1em;
-  margin: 1.1em;
+  margin: 1.1em 0.8em;
   border-radius: 1em;
   box-shadow: 0.33em 0.33em 10px #101010;
 }
 
 .layer2 {
-  background-color: #e45e04;
+  background-color: #e66000;
 }
 
 .layer2.side-bar {
-  border-radius: 1em 0px 0px 1em;
+  border-radius: 1em 0.4em 0.4em 1em;
   padding-right: 1.5em;
-  background-color: #ff9501;
+  background-color: #ffc34d;
   font-size: 0.75em;
 }
 
 .layer2.middle {
-  border-radius: 0px 1em 1em 0px;
+  border-radius: 0.4em 1em 1em 0.4em;
 }
 
 .body.flex-container {
@@ -133,6 +103,22 @@ nav a:hover {
   border-radius: 1em 1em 0 0;
   gap: 0.6em;
   padding: 0.5em 0;
+}
+
+.warning {
+  background-color: rgb(255, 40, 40);
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1em;
+  border-color: #101010;
+  border-style: solid;
+  border-width: 0.2em;
+  box-shadow: 0px 0.3em 5px black;
+}
+
+.timeline ul {
+  padding-left: 1.5em;
 }
 
 #up-arrow img {
@@ -150,14 +136,19 @@ nav a:hover {
   box-shadow: 0.2em 0.2em 5px rgba(0, 0, 0, 0.7);
 }
 
-.warning {
-  background-color: red;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 1em;
-  border-color: #101010;
-  border-style: solid;
-  border-width: 0.2em;
-  box-shadow: 0px 0.3em 5px black;
+#navbarlist {
+  padding-left: 0;
+}
+
+#navbarlist > li:hover {
+  background-color: rgb(233, 233, 233);
+}
+#navbarlist li a {
+  padding: 1em 0.5em;
+  flex-grow: 1;
+  font-size: 1.1em;
+}
+#navbarlist li {
+  flex-grow: 1;
+  padding-bottom: 0;
 }
