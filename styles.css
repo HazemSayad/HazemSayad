@@ -12,7 +12,7 @@ deep orange: #FF5722
 */
 
 body {
-  background-color: #ec7c3b;
+  background-color: #ffc100;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,6 +39,21 @@ a:hover {
 h1,
 h2 {
   color: white;
+}
+
+legend {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-top: -0.5em;
+  font-weight: bolder;
+  background-color: #e45e04;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+fieldset {
+  border: #e45e04 solid 0.35em;
 }
 
 .flex-container {
@@ -91,7 +106,7 @@ nav a:hover {
 }
 
 .card {
-  background-color: #ff8a66;
+  background-color: #ff9501;
   padding: 1em;
   margin: 1.1em;
   border-radius: 1em;
@@ -99,13 +114,16 @@ nav a:hover {
 }
 
 .layer2 {
-  background-color: #a14114;
+  background-color: #e45e04;
 }
 
 .layer2.side-bar {
   border-radius: 1em 0px 0px 1em;
   padding-right: 1.5em;
+  background-color: #ff9501;
+  font-size: 0.75em;
 }
+
 .layer2.middle {
   border-radius: 0px 1em 1em 0px;
 }
@@ -123,10 +141,10 @@ nav a:hover {
 }
 
 #up-arrow a {
-  background-color: rgb(255, 0, 0);
+  background-color: #ffc100;
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
   border-radius: 600em;
   padding: 0.8em;
   box-shadow: 0.2em 0.2em 5px rgba(0, 0, 0, 0.7);
