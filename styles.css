@@ -105,6 +105,14 @@ nav a:hover {
   padding: 0.5em 0;
 }
 
+.site-useful {
+  flex-flow: wrap;
+}
+
+.site-useful > .card {
+  max-width: 43%;
+}
+
 .warning {
   background-color: rgb(255, 40, 40);
   top: 0;
