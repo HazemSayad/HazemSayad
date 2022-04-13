@@ -143,7 +143,8 @@ nav a:hover {
 #navbarlist > li:hover {
   background-color: rgb(233, 233, 233);
 }
-#navbarlist li a {
+#navbarlist li a,
+#navbarlist li p {
   padding: 1em 0.5em;
   flex-grow: 1;
   font-size: 1.1em;
@@ -151,4 +152,36 @@ nav a:hover {
 #navbarlist li {
   flex-grow: 1;
   padding-bottom: 0;
+}
+
+#navbarlist p {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+}
+
+.dropdown-content > * {
+  font-size: 1.1em;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content a {
+  color: #000000;
+}
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #00a4bd;
 }
