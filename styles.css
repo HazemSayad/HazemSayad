@@ -113,6 +113,16 @@ nav a:hover {
   max-width: 43%;
 }
 
+.site-roadmap {
+  align-content: stretch;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.site-roadmap > .card {
+  flex-grow: 1;
+}
+
 .warning {
   background-color: rgb(255, 40, 40);
   top: 0;
