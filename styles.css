@@ -1,32 +1,38 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
+@media screen and (orientation: landscape) {
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
 
-*::selection {
-  background-color: darkgoldenrod;
-}
+  *::selection {
+    background-color: darkgoldenrod;
+  }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
 
-.flex-container {
-  display: flex;
-}
+  h1 {
+    font-size: 5em;
+  }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .flex-container {
+    display: flex;
+  }
 
-.section {
-  height: 100vh;
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section {
+    height: 100vh;
+  }
 }
