@@ -19,7 +19,12 @@
     top: 0%;
     left: 0%;
     bottom: 0%;
-    padding: 0% 0.5%;
+    /* padding: 0% 0.5%; */
+  }
+
+  nav > ul > li > a,
+  nav > ul > li:last-child {
+    padding: 0px 0.5em;
   }
 
   nav > ul {
@@ -67,6 +72,7 @@
     background-color: #000000;
     /* border: red solid 1px; */
     align-content: flex-end;
+    z-index: -1;
   }
 
   .front + * {
@@ -148,6 +154,31 @@
 
   .card strong {
     color: darkgoldenrod;
+  }
+
+  .drop-down-content {
+    display: none;
+    position: fixed;
+    left: 2.5em;
+  }
+
+  .drop-down-content > * {
+    padding: 1.5em 2em;
+    color: darkgoldenrod;
+    width: 100%;
+    font-weight: bold;
+    border-left: darkgoldenrod 0.3em solid;
+  }
+
+  .drop-down:hover .drop-down-content {
+    display: flex;
+    background-color: #fefefe;
+  }
+
+  .drop-down-content > *:hover {
+    background-color: darkgoldenrod;
+    color: #fefefe;
+    text-decoration-thickness: 2px;
   }
 }
 
