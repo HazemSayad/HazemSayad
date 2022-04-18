@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body id="top">
+  <body>
     <!-- navbar -->
     <nav class="flex-container fixed">
       <ul id="" class="flex-container flex-vertical center">
@@ -49,17 +49,18 @@
       </ul>
     </nav>
     <!-- middle body -->
-    <div class="info-display flex-container">
+    <div class="main-display flex-container">
       <!-- front as in title/name -->
-      <div class="flex-container front">
+      <div class="front flex-container flex-vertical">
         <h1>Hazem Sayad</h1>
+        <h2>Home</h2>
       </div>
       <!-- cards and info to display -->
       <div class="flex-container flex-vertical">
         <!-- fading ribbon on top for smooth UX -->
         <div class="faded-ribbon-top"></div>
-        <div>
-          <div class="card">
+        <div class="scroll-snap-container">
+          <div id="top" class="card">
             <div class="wrapper">
               <h2>Who Am I?</h2>
               <p>
@@ -196,7 +197,6 @@
           </div>
         </div>
         <!-- fading ribbon on bottom for smooth UX -->
-
         <div class="faded-ribbon-bottom"></div>
       </div>
     </div>

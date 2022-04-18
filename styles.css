@@ -6,19 +6,16 @@
     /* border: red 1px solid; */
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
   }
 
   nav {
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #fefefe;
     top: 0%;
     left: 0%;
     bottom: 0%;
@@ -35,11 +32,6 @@
 
   nav img {
     width: 1.5em;
-  }
-
-  h1 {
-    font-size: 4em;
-    font-weight: 900;
   }
 
   .flex-container {
@@ -65,18 +57,47 @@
   }
 
   .front {
+    max-width: 30vw;
     bottom: 0px;
-    height: 50vh;
-    width: 35vw;
-    padding: 2em;
+    height: 40vh;
+    width: auto;
+    padding-left: 2em;
     flex-basis: 125%;
     position: fixed;
     background-color: #000000;
-    border: red solid 1px;
+    /* border: red solid 1px; */
+    align-content: flex-end;
   }
 
   .front + * {
-    margin-left: 40vw;
+    margin-left: 30vw;
+  }
+
+  .front > h1 {
+    text-align: end;
+    font-size: 3.5em;
+    font-weight: 900;
+    align-self: flex-end;
+    letter-spacing: 0.02em;
+  }
+
+  .front > h2 {
+    color: darkgoldenrod;
+    font-size: 2.5em;
+    padding-top: 0.25em;
+    align-self: flex-end;
+  }
+
+  .scroll-snap-container {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+
+  .scroll-snap-container * {
+    scroll-snap-align: center;
   }
 
   .card {
@@ -90,21 +111,52 @@
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     top: 0px;
-    height: 20%;
-    width: 100%;
+    height: 15%;
+    width: calc(100% - 31vw);
+    right: 0.5em;
   }
 
   .faded-ribbon-bottom {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     bottom: 0px;
-    height: 20%;
-    width: 100%;
+    height: 15%;
+    width: calc(100% - 31vw);
+    right: 0.5em;
+  }
+
+  .card h2 {
+    color: #b8860b;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+
+  .card p {
+    padding-left: 1.5em;
+    font-size: 1.2em;
+  }
+
+  .card ul {
+    padding-top: 0.5em;
+    padding-left: 3em;
+    font-size: 1.1em;
+  }
+
+  .card li {
+    padding: 0.1em 0em;
+  }
+
+  .card strong {
+    color: darkgoldenrod;
   }
 }
 
 *::selection {
   background-color: rgb(184, 134, 11);
+}
+
+.card a {
+  color: darkgoldenrod;
 }
 
 #up-arrow {
