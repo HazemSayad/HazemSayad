@@ -29,12 +29,16 @@
     padding: 0% 0.5%;
   }
 
+  nav > ul {
+    gap: 7%;
+  }
+
   nav + * {
     margin-left: calc(1.75em + 1%);
   }
 
-  img {
-    width: 1.75em;
+  nav img {
+    width: 1.5em;
   }
 
   h1 {
