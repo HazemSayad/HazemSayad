@@ -28,6 +28,10 @@
     bottom: 0%;
   }
 
+  img {
+    width: 32px;
+  }
+
   h1 {
     font-size: 3.5em;
   }
