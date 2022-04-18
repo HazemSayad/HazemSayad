@@ -111,7 +111,7 @@
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     top: 0px;
-    height: 15%;
+    height: 13%;
     width: calc(100% - 31vw);
     right: 0.5em;
   }
@@ -120,7 +120,7 @@
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     bottom: 0px;
-    height: 15%;
+    height: 13%;
     width: calc(100% - 31vw);
     right: 0.5em;
   }
