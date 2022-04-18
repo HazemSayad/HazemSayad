@@ -6,10 +6,6 @@
     /* border: red 1px solid; */
   }
 
-  *::selection {
-    background-color: darkgoldenrod;
-  }
-
   html {
     scroll-behavior: smooth;
   }
@@ -69,6 +65,30 @@
   }
 
   .front {
-    padding: 1em;
+    bottom: 0px;
+    height: 50vh;
+    width: 50vw;
+    padding: 2em;
+    /* position: fixed; */
+    background-color: #000000;
+    border: red solid 1px;
   }
+}
+
+*::selection {
+  background-color: darkgoldenrod;
+}
+
+#up-arrow {
+  /* width: 2em;
+  height: 2em; */
+  border-radius: 100%;
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  background-color: darkgoldenrod;
+}
+
+#up-arrow img {
+  width: 2.5em;
 }
