@@ -29,6 +29,10 @@
     padding: 0% 0.5%;
   }
 
+  nav + * {
+    margin-left: calc(1.75em + 1%);
+  }
+
   img {
     width: 1.75em;
   }
@@ -61,7 +65,6 @@
   }
 
   .front {
-    margin-left: calc(1.75em + 1%);
     padding: 1em;
   }
 }
