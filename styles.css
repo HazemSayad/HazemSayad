@@ -3,7 +3,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    border: red 1px solid;
+    /* border: red 1px solid; */
   }
 
   *::selection {
@@ -17,23 +17,25 @@
   body {
     background-color: #000000;
     color: #ffffff;
+    font-family: "Roboto", sans-serif;
   }
 
   nav {
     height: 100vh;
-    position: fixed;
     background-color: #ffffff;
     top: 0%;
     left: 0%;
     bottom: 0%;
+    padding: 0% 0.5%;
   }
 
   img {
-    width: 32px;
+    width: 1.75em;
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    font-weight: 900;
   }
 
   .flex-container {
@@ -54,8 +56,12 @@
     height: 100vh;
   }
 
+  .fixed {
+    position: fixed;
+  }
+
   .front {
-    height: 100vh;
-    width: 30vw;
+    margin-left: calc(1.75em + 1%);
+    padding: 1em;
   }
 }
