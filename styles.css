@@ -161,6 +161,10 @@
     left: 2.5em;
   }
 
+  .drop-down {
+    position: relative;
+  }
+
   .drop-down-content img {
     margin-right: 0.5em;
     height: 1.2em;
