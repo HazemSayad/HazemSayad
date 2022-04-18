@@ -22,9 +22,8 @@
     /* padding: 0% 0.5%; */
   }
 
-  nav > ul > li a,
   nav > ul > li:last-child {
-    padding: 0px 0.5em;
+    padding: 0.5em 0.5em;
   }
 
   nav > ul {
@@ -160,6 +159,13 @@
     display: none;
     position: fixed;
     left: 2.5em;
+  }
+
+  .drop-down-content img {
+    margin-right: 0.5em;
+    height: 1.2em;
+    width: auto;
+    vertical-align: -0.23em;
   }
 
   .drop-down-content > * {
