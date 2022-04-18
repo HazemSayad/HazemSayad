@@ -159,6 +159,10 @@
   color: darkgoldenrod;
 }
 
+.card a:hover {
+  text-decoration-thickness: 2px;
+}
+
 #up-arrow {
   border-radius: 100%;
   position: fixed;
