@@ -29,3 +29,40 @@ function loadHTMLContent(elementId, filePath) {
   }
   element.innerHTML = innerHtmlData;
 }
+
+$(document).ready(function () {
+  let location = window.location.pathname;
+  let images = "./img/";
+  let nav_bar_ids = ["home", "roadmap", "useful", "showcase", "contact"];
+  let drop_menu_ids = ["github", "linkedin", "email"];
+
+  if (location === "/index.html") {
+    console.log("location: " + location + ", images folder is: " + images);
+  } else {
+    images = "../img/";
+    console.log("location: " + location + ", images folder is: " + images);
+  }
+
+  for (let i = 0; i < nav_bar_ids.length; i++) {
+    let id = "#nav-" + nav_bar_ids[i];
+    $(id)
+      .mouseenter(function () {
+        $(this).attr("src", images + nav_bar_ids[i] + "_hov.png");
+      })
+      .mouseleave(function () {
+        $(this).attr("src", images + nav_bar_ids[i] + ".png");
+      });
+  }
+
+  for (let i = 0; i < drop_menu_ids.length; i++) {
+    let id = "#nav-" + drop_menu_ids[i];
+    $(id)
+      .parent()
+      .mouseenter(function () {
+        $(id).attr("src", images + drop_menu_ids[i] + "_hov.png");
+      })
+      .mouseleave(function () {
+        $(id).attr("src", images + drop_menu_ids[i] + ".png");
+      });
+  }
+});
