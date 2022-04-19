@@ -93,6 +93,10 @@
     align-self: flex-end;
   }
 
+  .side {
+    flex-grow: 1;
+  }
+
   .scroll-snap-container {
     height: 100vh;
     overflow: auto;
