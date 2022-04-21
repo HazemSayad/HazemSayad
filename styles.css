@@ -110,7 +110,7 @@
   }
 
   .card {
-    margin: 5% 0px;
+    margin: 0px;
     padding: 0px 2em;
     height: 100vh;
     display: flex;
@@ -202,6 +202,20 @@
     background-color: darkgoldenrod;
     color: #fefefe;
     text-decoration-thickness: 2px;
+  }
+
+  .gallery {
+    padding: 2em;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 50px;
+    overflow: scroll;
+  }
+
+  .gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 50px; /* to match column gap */
   }
 }
 
