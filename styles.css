@@ -1,15 +1,5 @@
-@media screen and (orientation: landscape) {
-  * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    /* border: red 1px solid; */
-  }
-
+@media screen and (orientation: landscape) and (min-width: 800px) {
   body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
     overflow: hidden;
   }
 
@@ -19,23 +9,22 @@
     top: 0%;
     left: 0%;
     bottom: 0%;
-    /* padding: 0% 0.5%; */
   }
 
   nav > ul > li:last-child {
-    padding: 0.5em 0.5em;
+    padding: 0.5em;
   }
 
   nav > ul {
     gap: 7%;
   }
 
-  nav + * {
-    margin-left: calc(1.75em + 1%);
-  }
-
   nav img {
     width: 1.5em;
+  }
+
+  .main-display {
+    margin-left: 2.5em;
   }
 
   .flex-container {
@@ -61,21 +50,20 @@
   }
 
   .front {
-    max-width: 30vw;
+    max-width: 26vw;
     bottom: 0px;
+    margin-left: 1em;
+    margin-bottom: 1em;
     height: 40vh;
     width: auto;
-    padding-left: 2em;
     flex-basis: 125%;
     position: fixed;
     background-color: #000000;
-    /* border: red solid 1px; */
     align-content: flex-end;
-    z-index: -1;
   }
 
   .front + * {
-    margin-left: 30vw;
+    margin-left: 26vw;
   }
 
   .front > h1 {
@@ -114,7 +102,7 @@
     position: fixed;
     top: 0px;
     height: 10%;
-    width: calc(100% - 30vw - 1.5em - 1em - 3.5em);
+    width: calc(100% - 26vw - 1.5em - 1em - 3.5em);
     right: 2em;
   }
 
@@ -123,7 +111,7 @@
     position: fixed;
     bottom: 0px;
     height: 10%;
-    width: calc(100% - 30vw - 1.5em - 1em - 3.5em);
+    width: calc(100% - 26vw - 1.5em - 1em - 3.5em);
     right: 2em;
   }
 
@@ -137,8 +125,20 @@
     scrollbar-width: none;
   }
 
-  .card > .wrapper {
-    padding-bottom: 2em;
+  .card > .relative-container {
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 10%;  */
+  }
+
+  .relative-container > .wrapper {
+    top: 0px;
+    width: 100%;
+  }
+
+  .card > div {
+    height: auto;
+    width: auto;
   }
 
   .card h2 {
@@ -205,22 +205,152 @@
   }
 
   .gallery {
-    padding: 2em;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 50px;
-    overflow: scroll;
+    display: flex;
+    padding-left: 1em;
   }
 
-  .gallery img {
-    width: 100% !important;
-    height: auto !important;
-    margin-bottom: 50px; /* to match column gap */
+  .gallery.wide {
+    flex-direction: column;
+    justify-content: stretch;
   }
+
+  .gallery.wide > .crop {
+    width: 100%;
+  }
+
+  .gallery.rows-2 > .crop {
+    height: calc(75vh / 2);
+  }
+
+  .gallery.rows-3 > .crop {
+    height: calc(75vh / 3);
+  }
+
+  .gallery.rows-4 > .crop {
+    height: calc(75vh / 4);
+  }
+
+  .crop {
+    filter: grayscale(0.3);
+    filter: brightness(80%);
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    transition: 0.2s;
+  }
+
+  .crop:hover {
+    filter: grayscale(0);
+    filter: brightness(100%);
+  }
+
+  .crop img {
+    width: 100%;
+    position: absolute;
+    top: -55%;
+  }
+  /* modal classes here */
+  /* The Modal (background) */
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    /* width: 80%; */
+    max-width: 70%;
+    max-height: calc(95% - 100px);
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content,
+  #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    padding: 0.5em;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
 *::selection {
   background-color: rgb(184, 134, 11);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* border: red 1px solid; */
 }
 
 h1::selection,

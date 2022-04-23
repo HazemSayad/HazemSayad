@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Showcase</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-display flex-container">
+      <!-- front as in title/name -->
+      <div class="front flex-container flex-vertical">
+        <h1>Hazem Sayad</h1>
+        <h2>Showcase</h2>
+      </div>
+      <!-- cards and info to display -->
+      <div class="side flex-container flex-vertical">
+        <div class="scroll-snap-container">
+          <div id="top" class="card">
+            <h2>Laptop</h2>
+            <div class="relative-container center">
+              <div class="wrapper flex-container flex-vertical">
+                <div class="gallery wide rows-3 center">
+                  <div class="crop">
+                    <img src="../img/photo_2021-04-03_08-45-24.jpg" alt="" />
+                  </div>
+                  <div class="crop">
+                    <img src="../img/photo_2021-04-03_08-48-47.jpg" alt="" />
+                  </div>
+                  <div class="crop">
+                    <img src="../img/photo_2022-02-16_22-44-12.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fading ribbon on top for smooth UX -->
+        <div class="faded-ribbon-top"></div>
+        <!-- fading ribbon on bottom for smooth UX -->
+        <div class="faded-ribbon-bottom"></div>
+      </div>
+    </div>
+    <div id="up-arrow" class="center">
+      <a href="#top" class="flex-container"
+        ><img alt="Up" src="../img/up.png" />
+      </a>
+    </div>
+    <nav class="flex-container fixed">
+      <ul id="" class="flex-container flex-vertical center">
+        <li class="">
+          <a href="../index.html"
+            ><img id="nav-home" src="../img/home.png" alt="Home"
+          /></a>
+        </li>
+        <li class="">
+          <a href="./roadmap.html"
+            ><img id="nav-roadmap" src="../img/roadmap.png" alt="My Roadmap"
+          /></a>
+        </li>
+        <li class="">
+          <a href="./useful.html"
+            ><img id="nav-useful" src="../img/useful.png" alt="Useful"
+          /></a>
+        </li>
+        <li class="">
+          <a href="#top"
+            ><img id="nav-showcase" src="../img/showcase.png" alt="Showcase"
+          /></a>
+        </li>
+        <li class="drop-down flex-container flex-vertical center">
+          <img id="nav-contact" src="../img/contact.png" alt="Contact" />
+          <div class="drop-down-content flex-container flex-vertical center">
+            <a href="https://github.com/HazemSayad"
+              ><img id="nav-github" src="../img/github.png" alt="" />GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/hazemsayad"
+              ><img
+                id="nav-linkedin"
+                src="../img/linkedin.png"
+                alt=""
+              />LinkedIn</a
+            >
+            <a href="mailto:hazemsayad@gmail.com"
+              ><img id="nav-email" src="../img/email.png" alt="" />Email</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <div id="modal-caption"></div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
