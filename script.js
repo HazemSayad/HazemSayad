@@ -43,6 +43,21 @@ $(document).ready(function () {
     console.log("location: " + location + ", images folder is: " + images);
   }
 
+  if (location === "/site/showcase.html") {
+    $(".gallery img").on("click", function (event) {
+      var image_src = $(event.target).attr("src");
+      var image_caption = $(event.target).attr("alt");
+      $("#modal-image").attr("src", image_src);
+      $("modal-caption").text(image_caption);
+      $("#modal").css("display", "block");
+
+      $(".close").on("click", function () {
+        $("#modal").css("display", "none");
+      });
+      console.log("clicked");
+    });
+  }
+
   for (let i = 0; i < nav_bar_ids.length; i++) {
     let id = "#nav-" + nav_bar_ids[i];
     $(id)
@@ -65,4 +80,16 @@ $(document).ready(function () {
         $(id).attr("src", images + drop_menu_ids[i] + ".png");
       });
   }
+
+  // if (location === "/site/roadmap.html") {
+  //   $("#2014")
+  //     .mouseenter(function () {
+  //       $("#timeline")
+  //         .css("display", "block")
+  //         .css("position", "absolute")
+  //         .css("top", "10vh")
+  //         .css("left", "25vw");
+  //     })
+  //     .mouseleave(function () {});
+  // }
 });
