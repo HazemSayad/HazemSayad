@@ -37,7 +37,7 @@ $(function () {
   let nav_bar_ids = ["home", "roadmap", "useful", "showcase"];
   let drop_menu_ids = ["contact", "github", "linkedin", "email"];
 
-  if (location === "/index.html") {
+  if (location === /.\/index.html$/) {
     console.log("location: " + location + ", images folder is: " + images);
   } else {
     images = "../img/";
