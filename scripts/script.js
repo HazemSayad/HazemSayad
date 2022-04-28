@@ -30,11 +30,11 @@ function loadHTMLContent(elementId, filePath) {
   element.innerHTML = innerHtmlData;
 }
 
-$(document).ready(function () {
+$(function () {
   let location = window.location.pathname;
   let images = "./img/";
-  let nav_bar_ids = ["home", "roadmap", "useful", "showcase", "contact"];
-  let drop_menu_ids = ["github", "linkedin", "email"];
+  let nav_bar_ids = ["home", "roadmap", "useful", "showcase"];
+  let drop_menu_ids = ["contact", "github", "linkedin", "email"];
 
   if (location === "/index.html") {
     console.log("location: " + location + ", images folder is: " + images);
@@ -80,6 +80,18 @@ $(document).ready(function () {
         $(id).attr("src", images + drop_menu_ids[i] + ".png");
       });
   }
+
+  $(window).on("orientationchange", function (event) {
+    console.log("orientation change triggered");
+    let nav_ul = $("nav > ul");
+    if (event.orientation === "portrait") {
+      nav_ul.removeClass("flex-vertical");
+    } else {
+      nav_ul.addClass("flex-vertical");
+    }
+  });
+
+  $(window).orientationchange();
 
   // if (location === "/site/roadmap.html") {
   //   $("#2014")
