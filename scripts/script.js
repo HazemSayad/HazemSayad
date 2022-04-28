@@ -36,8 +36,9 @@ $(function () {
   let images = "./img/";
   let nav_bar_ids = ["home", "roadmap", "useful", "showcase"];
   let drop_menu_ids = ["contact", "github", "linkedin", "email"];
+  let regex_index = /\/index.html$/;
 
-  if (location === /.\/index.html$/) {
+  if (location.match(regex_index)) {
     console.log("location: " + location + ", images folder is: " + images);
   } else {
     images = "../img/";
