@@ -30,6 +30,7 @@ function loadHTMLContent(elementId, filePath) {
   element.innerHTML = innerHtmlData;
 }
 
+// When document is safe to modify
 $(function () {
   let location = window.location.pathname;
   let images = "./img/";
@@ -43,6 +44,7 @@ $(function () {
     console.log("location: " + location + ", images folder is: " + images);
   }
 
+  // Modal function
   if (location === "/site/showcase.html") {
     $(".gallery img").on("click", function (event) {
       var image_src = $(event.target).attr("src");
@@ -58,6 +60,7 @@ $(function () {
     });
   }
 
+  // When hovered over navigation bar, images are switched to hover variant with accent color
   for (let i = 0; i < nav_bar_ids.length; i++) {
     let id = "#nav-" + nav_bar_ids[i];
     $(id)
@@ -69,6 +72,7 @@ $(function () {
       });
   }
 
+  // When hovered over  drop down menu content images are switched to the opposite variant
   for (let i = 0; i < drop_menu_ids.length; i++) {
     let id = "#nav-" + drop_menu_ids[i];
     $(id)
@@ -81,6 +85,7 @@ $(function () {
       });
   }
 
+  // When orientation is changed mainly for mobile
   $(window).on("orientationchange", function (event) {
     console.log("orientation change triggered");
     let nav_ul = $("nav > ul");
@@ -91,6 +96,7 @@ $(function () {
     }
   });
 
+  // manually trigger orientation change after DOM is loaded to detect orientation
   $(window).orientationchange();
 
   // if (location === "/site/roadmap.html") {
