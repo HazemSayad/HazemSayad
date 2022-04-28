@@ -102,8 +102,8 @@
     position: fixed;
     top: 0px;
     height: 10%;
-    width: calc(100% - 26vw - 1.5em - 1em - 3.5em);
-    right: 2em;
+    width: calc(100% - 26vw - 1.5em - 3.5em);
+    right: 1em;
   }
 
   .faded-ribbon-bottom {
@@ -111,8 +111,8 @@
     position: fixed;
     bottom: 0px;
     height: 10%;
-    width: calc(100% - 26vw - 1.5em - 1em - 3.5em);
-    right: 2em;
+    width: calc(100% - 26vw - 1.5em - 3.5em);
+    right: 1em;
   }
 
   .card {
@@ -162,10 +162,6 @@
 
   .card li {
     padding: 0.1em 0em;
-  }
-
-  .card strong {
-    color: darkgoldenrod;
   }
 
   .drop-down-content {
@@ -334,6 +330,232 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  #up-arrow {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    background-color: darkgoldenrod;
+  }
+
+  #up-arrow img {
+    width: 2.5em;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    overflow: hidden;
+  }
+
+  nav {
+    /* height: calc(5vh+1em); */
+    width: 100vw;
+    background-color: #fefefe;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    justify-content: center;
+  }
+
+  nav > ul > li:last-child {
+    padding: 1vh;
+  }
+
+  nav > ul.flex-container {
+    gap: 7%;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  nav img {
+    height: 4vh;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .drop-down-content {
+    display: none;
+    position: fixed;
+    bottom: 6vh;
+    /* width: 100%; */
+  }
+
+  .drop-down {
+    position: relative;
+  }
+
+  .drop-down-content img {
+    margin-right: 0.5em;
+    height: 1.2em;
+    width: auto;
+    vertical-align: -0.23em;
+  }
+
+  .drop-down-content > * {
+    padding: 1.5em 2em;
+    color: darkgoldenrod;
+    width: 100%;
+    font-weight: bold;
+    border-left: darkgoldenrod 0.3em solid;
+  }
+
+  .drop-down:hover .drop-down-content {
+    display: flex;
+    background-color: #fefefe;
+  }
+
+  .drop-down-content > *:hover {
+    background-color: darkgoldenrod;
+    color: #fefefe;
+    text-decoration-thickness: 2px;
+  }
+
+  .flex-vertical {
+    flex-direction: column;
+  }
+
+  .main-display {
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    bottom: 6vh;
+    right: 0px;
+    left: 0px;
+  }
+
+  div.front.flex-container {
+    flex-direction: row;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1;
+    padding: 0.8em;
+  }
+
+  div.front.flex-container > h2 {
+    margin-left: 1em;
+    align-self: center;
+  }
+
+  .front > h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+  }
+
+  .front > h2 {
+    color: darkgoldenrod;
+    padding-top: 0.25em;
+    border-bottom: darkgoldenrod 3px solid;
+  }
+
+  .card {
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 1em;
+  }
+
+  .card > .relative-container {
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 10%;  */
+  }
+
+  .relative-container > .wrapper {
+    top: 0px;
+    width: 100%;
+  }
+
+  .card > div {
+    height: auto;
+    width: auto;
+  }
+
+  .card > div {
+    height: auto;
+    width: auto;
+  }
+
+  .card h2 {
+    color: #b8860b;
+    font-size: 2.25em;
+    padding-bottom: 1em;
+    position: sticky;
+  }
+
+  .card p {
+    padding-left: 1em;
+    font-size: 1.25em;
+  }
+
+  .card ul {
+    padding-top: 0.5em;
+    padding-left: 2.75em;
+    font-size: 1em;
+    flex-basis: 50%;
+  }
+
+  .card li {
+    padding: 0.1em 0em;
+  }
+
+  .side {
+    position: relative;
+    height: 100%;
+    top: 0px;
+    bottom: 6vh;
+  }
+
+  .scroll-snap-container {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .scroll-snap-container * {
+    scroll-snap-align: center;
+  }
+
+  .faded-ribbon-bottom {
+    display: none;
+  }
+
+  .faded-ribbon-top {
+    display: none;
+  }
+
+  #up-arrow {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 8vh;
+    right: 2vw;
+    background-color: darkgoldenrod;
+  }
+
+  #up-arrow img {
+    width: 10vw;
+  }
 }
 
 body {
@@ -368,18 +590,10 @@ a::selection {
   text-decoration-thickness: 2px;
 }
 
+.card strong {
+  color: darkgoldenrod;
+}
+
 #timeline {
   display: none;
-}
-
-#up-arrow {
-  border-radius: 100%;
-  position: fixed;
-  bottom: 1.5em;
-  right: 1.5em;
-  background-color: darkgoldenrod;
-}
-
-#up-arrow img {
-  width: 2.5em;
 }
