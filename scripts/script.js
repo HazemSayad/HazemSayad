@@ -50,7 +50,7 @@ $(function () {
       var image_src = $(event.target).attr("src");
       var image_caption = $(event.target).attr("alt");
       $("#modal-image").attr("src", image_src);
-      $("modal-caption").text(image_caption);
+      $("#modal-caption").text(image_caption);
       $("#modal").css("display", "block");
 
       $(".close").on("click", function () {
