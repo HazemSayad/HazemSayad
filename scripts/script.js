@@ -37,6 +37,7 @@ $(function () {
   let nav_bar_ids = ["home", "roadmap", "useful", "showcase"];
   let drop_menu_ids = ["contact", "github", "linkedin", "email"];
   let regex_index = /\/index.html$/;
+  let regex_showcase = /\/site\/showcase.html$/;
 
   if (location.match(regex_index)) {
     console.log("location: " + location + ", images folder is: " + images);
@@ -46,7 +47,7 @@ $(function () {
   }
 
   // Modal function
-  if (location === "/site/showcase.html") {
+  if (location.match(regex_showcase)) {
     $(".gallery img").on("click", function (event) {
       var image_src = $(event.target).attr("src");
       var image_caption = $(event.target).attr("alt");
@@ -100,7 +101,7 @@ $(function () {
   // manually trigger orientation change after DOM is loaded to detect orientation
   $(window).orientationchange();
 
-  // if (location === "/site/roadmap.html") {
+  // if (location === "/site/roadmap.html") { // MAKE SURE TO USE REGEX FOR LOCATION
   //   $("#2014")
   //     .mouseenter(function () {
   //       $("#timeline")
