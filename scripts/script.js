@@ -39,7 +39,7 @@ $(function () {
   let regex_index = /\/index.html$/;
   let regex_showcase = /\/site\/showcase.html$/;
 
-  if (location.match(regex_index)) {
+  if (location.match(regex_index) || location === /HazemSayad\/$/) {
     console.log("location: " + location + ", images folder is: " + images);
   } else {
     images = "../img/";
