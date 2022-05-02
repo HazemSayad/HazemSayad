@@ -37,9 +37,10 @@ $(function () {
   let nav_bar_ids = ["home", "roadmap", "useful", "showcase"];
   let drop_menu_ids = ["contact", "github", "linkedin", "email"];
   let regex_index = /\/index.html$/;
+  let regex_indexless = /HazemSayad\/$/;
   let regex_showcase = /\/site\/showcase.html$/;
 
-  if (location.match(regex_index) || location === /HazemSayad\/$/) {
+  if (location.match(regex_index) || location.match(regex_indexless)) {
     console.log("location: " + location + ", images folder is: " + images);
   } else {
     images = "../img/";
