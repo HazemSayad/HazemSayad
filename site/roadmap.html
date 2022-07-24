@@ -1,264 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roadmap</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      $(document).bind("mobileinit", function () {
-        $.mobile.ajaxEnabled = false;
-      });
-    </script>
-    <script src="../scripts/jquery.mobile.custom.js"></script>
-  </head>
-  <body>
-    <div class="main-display flex-container">
-      <!-- <div id="timeline" class="flex-container flex-vertical">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).bind("mobileinit", function () {
+      $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <script src="../scripts/jquery.mobile.custom.js"></script>
+</head>
+
+<body>
+  <div class="main-display flex-container">
+    <!-- <div id="timeline" class="flex-container flex-vertical">
         <ul>
           <li>1</li>
           <li>2</li>
           <li>3</li>
         </ul>
       </div> -->
-      <!-- front as in title/name -->
-      <div class="front flex-container flex-vertical">
-        <h1>Hazem Sayad</h1>
-        <h2>Roadmap</h2>
-      </div>
-      <!-- cards and info to display -->
-      <div class="side flex-container flex-vertical">
-        <!-- fading ribbon on top for smooth UX -->
-        <div class="faded-ribbon-top"></div>
-        <div class="scroll-snap-container">
-          <div id="top" class="card">
-            <div class="wrapper">
-              <h2>My Projects</h2>
-              <ul>
-                <li>Earth As A Battery</li>
-                <li>My Own Website</li>
-                <li>Germination Box</li>
-                <li>ptrn</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>My To Do List:</h2>
-              <ul>
-                <li>Finish ptrn project and push it as a package for linux.</li>
-                <li>
-                  Try to port Adobe Illustrator to linux using wine and ptrn
-                </li>
-                <li>Create the best solution for weight loss and dieting</li>
-                <li>Fund the app myself or get funding for it:</li>
-                <li>
-                  Work on Earth As A Battery project as a global warming
-                  solution
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>Present</h2>
-              <ul id="present">
-                <li>Learned Python programming</li>
-                <li>Learned the basics of Bash scripting</li>
-                <li>Learned HTML, CSS, and JavaScript</li>
-                <li>Learned SQL</li>
-                <li>
-                  Learning Linux power tools, file hierarchy, troubleshooting
-                  and maintenance
-                </li>
-                <li>and much more...</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2021</h2>
-              <ul id="2021">
-                <li>
-                  Created, researched and developed Germination box senior
-                  project
-                </li>
-                <li>Taught myself SolidWorks animation</li>
-                <li>
-                  Created a heating vest from recycled cables that runs over 5V
-                  USB
-                </li>
-                <li>Switched completely to Linux Pop!_OS/Ubuntu</li>
-                <li>Graduated BSME with Honor</li>
-                <li>
-                  Started a self teaching journey to become a SysAdmin,
-                  Full-Stack Web-Dev, and Android Apps Developer
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2020</h2>
-              <ul id="2020">
-                <li>Learned how to use MATLAB</li>
-                <li>Learned SolidWorks 2D and 3D</li>
-                <li>Mastered the art of Soldering and Wiring</li>
-                <li>Intermediate Level of Electrical Engineering</li>
-                <li>
-                  Fully disassembled,
-                  <a href="./showcase.html#laptop">modified</a>, and
-                  successfully assembled my second PC
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2019</h2>
-              <ul id="2019">
-                <li>Achieved Honor's List for 5 semesters back to back</li>
-                <li>Covid-19 hit humanity :(</li>
-                <li>Learned about Public Health and Safety</li>
-                <li>Taugh myself First Aid for emergency situations</li>
-                <li>Started working with electronics and circuit boards</li>
-                <li>Bought my first semi-pro engineering toolkits</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2018</h2>
-              <ul id="2018">
-                <li>Second PC (2.2GHz 6-core/8GB/256GB SSD/GTX1060 Max-Q)</li>
-                <li>Windows 10</li>
-                <li>Learned AutoCAD</li>
-                <li>Explored the world of 2D and 3D designs</li>
-                <li>Job as head chef</li>
-                <li>Achieved 4th place in Inter-Campus Speech Competition</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2017</h2>
-              <ul id="2017">
-                <li>Self taught Adobe Illustrator</li>
-                <li>Explored the world of OOP</li>
-                <li>Created a succesful business logo</li>
-                <li>Job in customer service line as a cashier</li>
-                <li>1st year in ME</li>
-                <li>Job as sous-chef</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2016</h2>
-              <ul id="2016">
-                <li>
-                  Enrolled in OLA MAL and developed public speaking, project
-                  managment, and leadership skills
-                </li>
-                <li>Job as an Assistant to Senior Technician</li>
-                <li>Improved Math skills</li>
-                <li>Improved Physics skills</li>
-                <li>Achieved 3rd place in 12th grade</li>
-                <li>
-                  Scored very high on Math, Physics, and Chemistry Official
-                  Exams
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2015</h2>
-              <ul id="2015">
-                <li>Cheat Engine</li>
-                <li>Android rooting</li>
-                <li>Android modding</li>
-                <li>Memory hacks</li>
-                <li>Learned about the basics of networking</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="wrapper">
-              <h2>2014</h2>
-              <ul id="2014">
-                <li>First personal computer (1GHz APU/8GB/500GB)</li>
-                <li>Windows 8.1</li>
-                <li>Command Prompt and Batch files</li>
-                <li>C Programming Language</li>
-                <li>Intro to Java</li>
-              </ul>
-            </div>
+    <!-- front as in title/name -->
+    <div class="front flex-container flex-vertical">
+      <h1>Hazem Sayad</h1>
+      <h2>Roadmap</h2>
+    </div>
+    <!-- cards and info to display -->
+    <div class="side flex-container flex-vertical">
+      <!-- fading ribbon on top for smooth UX -->
+      <div class="faded-ribbon-top"></div>
+      <div class="scroll-snap-container">
+        <div id="top" class="card">
+          <div class="wrapper">
+            <h2>My Projects</h2>
+            <ul>
+              <li>Earth As A Battery</li>
+              <li>My Own Website</li>
+              <li>Germination Box</li>
+              <li>YoutubeClassroom</li>
+              <li>ptrn</li>
+            </ul>
           </div>
         </div>
-        <!-- fading ribbon on bottom for smooth UX -->
-        <div class="faded-ribbon-bottom"></div>
-      </div>
-    </div>
-    <div id="up-arrow" class="center">
-      <a href="#top" class="flex-container"
-        ><img alt="Up" src="../img/up.png" />
-      </a>
-    </div>
-    <nav class="flex-container fixed">
-      <ul id="" class="flex-container flex-vertical center">
-        <li class="">
-          <a href="../index.html"
-            ><img id="nav-home" src="../img/home.png" alt="Home"
-          /></a>
-        </li>
-        <li class="">
-          <a href="#top"
-            ><img id="nav-roadmap" src="../img/roadmap.png" alt="My Roadmap"
-          /></a>
-        </li>
-        <li class="">
-          <a href="./useful.html"
-            ><img id="nav-useful" src="../img/useful.png" alt="Useful"
-          /></a>
-        </li>
-        <li class="">
-          <a href="./showcase.html"
-            ><img id="nav-showcase" src="../img/showcase.png" alt="Showcase"
-          /></a>
-        </li>
-        <li class="drop-down flex-container flex-vertical center">
-          <img id="nav-contact" src="../img/contact.png" alt="Contact" />
-          <div class="drop-down-content flex-container flex-vertical center">
-            <a target="_blank" href="https://github.com/HazemSayad"
-              ><img id="nav-github" src="../img/github.png" alt="" />GitHub</a
-            >
-            <a target="_blank" href="https://www.linkedin.com/in/hazemsayad"
-              ><img
-                id="nav-linkedin"
-                src="../img/linkedin.png"
-                alt=""
-              />LinkedIn</a
-            >
-            <a target="_blank" href="mailto:hazemsayad@gmail.com"
-              ><img id="nav-email" src="../img/email.png" alt="" />Email</a
-            >
+        <div class="card">
+          <div class="wrapper">
+            <h2>My To Do List:</h2>
+            <ul>
+              <li>Finish ptrn project and push it as a package for linux.</li>
+              <li>
+                Try to port Adobe Illustrator to linux using wine and ptrn
+              </li>
+              <li>Create the best solution for weight loss and dieting</li>
+              <li>Fund the app myself or get funding for it:</li>
+              <li>
+                Work on Earth As A Battery project as a global warming
+                solution
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
-    </nav>
-    <script src="../scripts/script.js"></script>
-  </body>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>Present</h2>
+            <ul id="present">
+              <li>Learned Python programming</li>
+              <li>Learned the basics of Bash scripting</li>
+              <li>Learned HTML, CSS, and JavaScript</li>
+              <li>Learned SQL</li>
+              <li>
+                Learning Linux power tools, file hierarchy, troubleshooting
+                and maintenance
+              </li>
+              <li>and much more...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2021</h2>
+            <ul id="2021">
+              <li>
+                Created, researched and developed Germination box senior
+                project
+              </li>
+              <li>Taught myself SolidWorks animation</li>
+              <li>
+                Created a heating vest from recycled cables that runs over 5V
+                USB
+              </li>
+              <li>Switched completely to Linux Pop!_OS/Ubuntu</li>
+              <li>Graduated BSME with Honor</li>
+              <li>
+                Started a self teaching journey to become a SysAdmin,
+                Full-Stack Web-Dev, and Android Apps Developer
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2020</h2>
+            <ul id="2020">
+              <li>Learned how to use MATLAB</li>
+              <li>Learned SolidWorks 2D and 3D</li>
+              <li>Mastered the art of Soldering and Wiring</li>
+              <li>Intermediate Level of Electrical Engineering</li>
+              <li>
+                Fully disassembled,
+                <a href="./showcase.html#laptop">modified</a>, and
+                successfully assembled my second PC
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2019</h2>
+            <ul id="2019">
+              <li>Achieved Honor's List for 5 semesters back to back</li>
+              <li>Covid-19 hit humanity :(</li>
+              <li>Learned about Public Health and Safety</li>
+              <li>Taugh myself First Aid for emergency situations</li>
+              <li>Started working with electronics and circuit boards</li>
+              <li>Bought my first semi-pro engineering toolkits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2018</h2>
+            <ul id="2018">
+              <li>Second PC (2.2GHz 6-core/8GB/256GB SSD/GTX1060 Max-Q)</li>
+              <li>Windows 10</li>
+              <li>Learned AutoCAD</li>
+              <li>Explored the world of 2D and 3D designs</li>
+              <li>Job as head chef</li>
+              <li>Achieved 4th place in Inter-Campus Speech Competition</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2017</h2>
+            <ul id="2017">
+              <li>Self taught Adobe Illustrator</li>
+              <li>Explored the world of OOP</li>
+              <li>Created a succesful business logo</li>
+              <li>Job in customer service line as a cashier</li>
+              <li>1st year in ME</li>
+              <li>Job as sous-chef</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2016</h2>
+            <ul id="2016">
+              <li>
+                Enrolled in OLA MAL and developed public speaking, project
+                managment, and leadership skills
+              </li>
+              <li>Job as an Assistant to Senior Technician</li>
+              <li>Improved Math skills</li>
+              <li>Improved Physics skills</li>
+              <li>Achieved 3rd place in 12th grade</li>
+              <li>
+                Scored very high on Math, Physics, and Chemistry Official
+                Exams
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2015</h2>
+            <ul id="2015">
+              <li>Cheat Engine</li>
+              <li>Android rooting</li>
+              <li>Android modding</li>
+              <li>Memory hacks</li>
+              <li>Learned about the basics of networking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <h2>2014</h2>
+            <ul id="2014">
+              <li>First personal computer (1GHz APU/8GB/500GB)</li>
+              <li>Windows 8.1</li>
+              <li>Command Prompt and Batch files</li>
+              <li>C Programming Language</li>
+              <li>Intro to Java</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- fading ribbon on bottom for smooth UX -->
+      <div class="faded-ribbon-bottom"></div>
+    </div>
+  </div>
+  <div id="up-arrow" class="center">
+    <a href="#top" class="flex-container"><img alt="Up" src="../img/up.png" />
+    </a>
+  </div>
+  <nav class="flex-container fixed">
+    <ul id="" class="flex-container flex-vertical center">
+      <li class="">
+        <a href="../index.html"><img id="nav-home" src="../img/home.png" alt="Home" /></a>
+      </li>
+      <li class="">
+        <a href="#top"><img id="nav-roadmap" src="../img/roadmap.png" alt="My Roadmap" /></a>
+      </li>
+      <li class="">
+        <a href="./useful.html"><img id="nav-useful" src="../img/useful.png" alt="Useful" /></a>
+      </li>
+      <li class="">
+        <a href="./showcase.html"><img id="nav-showcase" src="../img/showcase.png" alt="Showcase" /></a>
+      </li>
+      <li class="drop-down flex-container flex-vertical center">
+        <img id="nav-contact" src="../img/contact.png" alt="Contact" />
+        <div class="drop-down-content flex-container flex-vertical center">
+          <a target="_blank" href="https://github.com/HazemSayad"><img id="nav-github" src="../img/github.png"
+              alt="" />GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/hazemsayad"><img id="nav-linkedin"
+              src="../img/linkedin.png" alt="" />LinkedIn</a>
+          <a target="_blank" href="mailto:hazemsayad@gmail.com"><img id="nav-email" src="../img/email.png"
+              alt="" />Email</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <script src="../scripts/script.js"></script>
+</body>
+
 </html>
