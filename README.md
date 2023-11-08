@@ -5,7 +5,6 @@ Mechanical Engineer and Software Engineer
 
 I have a passion for technology and architecture. I specialize in backend web development and Flutter cross-platform application development. I love working on complex and puzzling problems, so hit me up if you got some!
 
-*   🖥️  See my [portfolio](http://hazemsayad.github.io/HazemSayad/) back when I started development. It needs a refresh, and will be my next side project using Flutter
 *   ✉️  You can contact me at [hazem@duck.com](mailto:hazem@duck.com)
 *   🧠  I'm learning Go and Flutter all the time
 *   🤝  I'm open to collaborating on useful programs, backend and flutter projects, and secure code implementations
