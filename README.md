@@ -1,6 +1,6 @@
 Hi 👋 My name is Hazem Sayad
 ===================================================================================================================================
-Mechanical Engineer and Software Engineer
+Software Engineer and Mechanical Engineer
 -----------------------------------------
 
 I have a passion for technology and architecture. I specialize in backend web development and Flutter cross-platform application development. I love working on complex and puzzling problems, so hit me up if you got some!
