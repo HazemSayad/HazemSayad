@@ -25,17 +25,17 @@
 			>
 		</div>
 		<div class="group md:my-4">
-			<ClickableNavBarIcon href="/roadmap">
+			<ClickableNavBarIcon href="/roadmap.html">
 				<MapIcon class="group-hover:stroke-titan-white-500" /></ClickableNavBarIcon
 			>
 		</div>
 		<div class="group md:my-4">
-			<ClickableNavBarIcon href="/useful">
+			<ClickableNavBarIcon href="/useful.html">
 				<BookmarkIcon class="group-hover:stroke-titan-white-500" /></ClickableNavBarIcon
 			>
 		</div>
 		<div class="group md:my-4">
-			<ClickableNavBarIcon href="/showcase">
+			<ClickableNavBarIcon href="/showcase.html">
 				<StarIcon class="group-hover:stroke-titan-white-500" /></ClickableNavBarIcon
 			>
 		</div>

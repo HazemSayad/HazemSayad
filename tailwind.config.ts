@@ -10,7 +10,7 @@ export default {
 	theme: {
 		extend: {
 			content: {
-				chevron: 'url("img/chevron-right.svg")'
+				chevron: 'url("/img/chevron-right.svg")'
 			},
 			animation: {
 				meteor: 'meteor 5s linear infinite'
