@@ -18,6 +18,23 @@
 			<HoverableListItem>WebARB</HoverableListItem>
 		</ul>
 	</Card>
+	<Card id="2025" title="2025">
+		<ul>
+			<HoverableListItem
+				>Complete application rewrite in React and Go for a client</HoverableListItem
+			>
+			<HoverableListItem>Multiple websites optimizations for multiple clients</HoverableListItem>
+			<HoverableListItem
+				>Developed custom tools that integrated clients' systems with 3rd party services in Node.js</HoverableListItem
+			>
+			<HoverableListItem>Read You Don't Know JS Yet (book series)</HoverableListItem>
+			<HoverableListItem
+				>Developed state of the art factory automation software with full robot integration support,
+				user friendly custom scripting environment, real time 3D simulation of factory floor, and
+				much more...</HoverableListItem
+			>
+		</ul>
+	</Card>
 	<Card id="2024" title="2024">
 		<ul>
 			<HoverableListItem>Learned React and Svelte</HoverableListItem>
